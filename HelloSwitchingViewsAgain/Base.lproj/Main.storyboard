@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lEE-cC-e9O">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cf0-mm-oZY">
+            <objects>
+                <navigationController id="lEE-cC-e9O" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fRg-9v-FuP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EMB-BQ-Pj7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GsN-1Y-CHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-898" y="116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="blue" id="BYZ-38-t0r" customClass="ViewController" customModule="HelloSwitchingViewsAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N4-sC-j8M">
+                                <rect key="frame" x="145" y="318" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="QFS-8R-QKp"/>
+                                    <constraint firstAttribute="height" constant="30" id="jrc-Fs-HwK"/>
+                                </constraints>
+                                <state key="normal" title="Go to View2"/>
+                                <connections>
+                                    <action selector="gotoView2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taE-sp-lBS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7259987806075201" green="0.97421262096755445" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9N4-sC-j8M" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cT3-ZT-ga7"/>
+                            <constraint firstItem="9N4-sC-j8M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gQd-ZW-12T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yFI-zV-jg6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="117"/>
+        </scene>
+        <!--Light Red-->
+        <scene sceneID="xcl-lK-y4y">
+            <objects>
+                <viewController storyboardIdentifier="lightRed" id="AhG-kU-mcU" customClass="LightRed" customModule="HelloSwitchingViewsAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LG5-2H-sWa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNl-3R-T1J">
+                                <rect key="frame" x="145.5" y="318" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="4aN-vo-nDO"/>
+                                    <constraint firstAttribute="height" constant="30" id="mT4-fn-kUz"/>
+                                </constraints>
+                                <state key="normal" title="Go to View3"/>
+                                <connections>
+                                    <action selector="gototView3:" destination="D5I-js-XOl" eventType="touchUpInside" id="6cd-fb-fFX"/>
+                                    <action selector="gototView3:" destination="AhG-kU-mcU" eventType="touchUpInside" id="dW8-Ss-Nwc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-PX-qZw">
+                                <rect key="frame" x="146" y="374" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7vi-9B-gas"/>
+                                    <constraint firstAttribute="width" constant="82" id="XEe-Cs-SkE"/>
+                                </constraints>
+                                <state key="normal" title="Go to View1"/>
+                                <connections>
+                                    <action selector="gotoView1:" destination="AhG-kU-mcU" eventType="touchUpInside" id="6z9-bq-gfa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.73664388281436721" blue="0.72523027858921241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PNl-3R-T1J" firstAttribute="centerX" secondItem="LG5-2H-sWa" secondAttribute="centerX" id="54e-IL-uVb"/>
+                            <constraint firstItem="PNl-3R-T1J" firstAttribute="centerY" secondItem="LG5-2H-sWa" secondAttribute="centerY" id="6AW-DE-rMC"/>
+                            <constraint firstItem="1XI-PX-qZw" firstAttribute="centerX" secondItem="LG5-2H-sWa" secondAttribute="centerX" id="F9r-bz-VLt"/>
+                            <constraint firstItem="1XI-PX-qZw" firstAttribute="top" secondItem="PNl-3R-T1J" secondAttribute="bottom" constant="26" id="N3W-F3-6b0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rg9-2M-mCG"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzl-fn-0mb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="D5I-js-XOl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="117.39130434782609"/>
+        </scene>
+        <!--Light Green View Controller-->
+        <scene sceneID="S71-Qd-Lct">
+            <objects>
+                <viewController storyboardIdentifier="green" id="kZ3-Zm-qA3" customClass="LightGreenViewController" customModule="HelloSwitchingViewsAgain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QfJ-bG-DPj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWo-Ge-ndy">
+                                <rect key="frame" x="138" y="318" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hFy-F6-Pnj"/>
+                                    <constraint firstAttribute="width" constant="98" id="nRa-fY-eXf"/>
+                                </constraints>
+                                <state key="normal" title="Back to View2"/>
+                                <connections>
+                                    <action selector="backtoView2:" destination="kZ3-Zm-qA3" eventType="touchUpInside" id="X3I-bo-X0H"/>
+                                    <action selector="backtoView2:" destination="1hH-2t-tzE" eventType="touchUpInside" id="nPI-yd-QI3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7342751004100021" green="1" blue="0.75486752940154067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QWo-Ge-ndy" firstAttribute="centerX" secondItem="QfJ-bG-DPj" secondAttribute="centerX" id="8fW-gz-QVz"/>
+                            <constraint firstItem="QWo-Ge-ndy" firstAttribute="centerY" secondItem="QfJ-bG-DPj" secondAttribute="centerY" id="LKQ-c6-ZaS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QvB-cd-lpO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHO-Za-MDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1hH-2t-tzE" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="117"/>
+        </scene>
+    </scenes>
+</document>
